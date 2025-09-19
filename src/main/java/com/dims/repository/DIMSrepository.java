@@ -1,4 +1,7 @@
 package com.dims.repository;
 
-public interface DIMSrepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DIMSrepository  extends JpaRepository {
+
 }
