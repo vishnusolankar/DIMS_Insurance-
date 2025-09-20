@@ -5,10 +5,11 @@ import com.dims.entity.Customer;
 import com.dims.repository.CustomerRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class CustomerServiceImpl implements CustomerServiceI{
 
     @Autowired
@@ -31,7 +32,7 @@ public class CustomerServiceImpl implements CustomerServiceI{
             Customer cust = new Customer().builder()
                     .name(customerDto.getName())
                     .email(customerDto.getEmail())
-                    .aadharNumber(customerDto.getAadharNumber())
+                    .aadhar(customerDto.getAadharNumber())
                     .dob(customerDto.getDob())
                     .phoneNumer(customerDto.getPhoneNumer())
                     .panNumber(customerDto.getPanNumber())
@@ -52,7 +53,7 @@ public class CustomerServiceImpl implements CustomerServiceI{
             Customer cust = new Customer().builder()
                     .name(customerDto.getName())
                     .email(customerDto.getEmail())
-                    .aadharNumber(customerDto.getAadharNumber())
+                    .aadhar(customerDto.getAadharNumber())
                     .dob(customerDto.getDob())
                     .phoneNumer(customerDto.getPhoneNumer())
                     .panNumber(customerDto.getPanNumber())
