@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
+import java.time.LocalDate;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,7 +28,7 @@ public class Customer {
    @Column(name = "customer_pan", unique = true)
     private String panNumber;
    @Column(name = "customer_dob")
-    private String dob;
+    private LocalDate dob;
    @Column(name = "customer_address")
     private String address;
 }
