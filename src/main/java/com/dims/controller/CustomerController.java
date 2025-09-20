@@ -27,12 +27,12 @@ public class CustomerController {
         return new ResponseEntity<>(customerServiceI.updateCustomerById(id,customerDto), HttpStatus.ACCEPTED);
     }
 
-    @PutMapping("/updateCustomer")
+    @PutMapping("/updateCustomer/{aadhar}")
     public ResponseEntity<CustomerDto> updateCustomer(@PathVariable String aadhar,@Valid @RequestBody CustomerDto customerDto) {
         return new ResponseEntity<>(customerServiceI.updateCustomerByAadhar(aadhar,customerDto), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/getCustomerById")
+    @GetMapping("/getCustomerById/{id}")
     public ResponseEntity<CustomerDto> getCustomerById(@PathVariable long id) {
         return new ResponseEntity<>(customerServiceI.getCustomerById(id), HttpStatus.OK);
     }
@@ -47,13 +47,13 @@ public class CustomerController {
         return new ResponseEntity<>(customerServiceI.getAllCustomers(),HttpStatus.OK);
     }
 
-    @DeleteMapping("/deleteCustomerById")
-    public ResponseEntity<String> deleteById(long id){
+    @DeleteMapping("/deleteCustomerById/{id}")
+    public ResponseEntity<String> deleteById(@PathVariable long id){
         return new ResponseEntity<>(customerServiceI.deleteById(id),HttpStatus.OK);
     }
 
-    @DeleteMapping("/deleteCustomerById")
-    public ResponseEntity<String> deleteByAadhar(String aadhar){
+    @DeleteMapping("/deleteCustomerByAadhar/{aadhar}")
+    public ResponseEntity<String> deleteByAadhar(@PathVariable String aadhar){
         return new ResponseEntity<>(customerServiceI.deleteByAadhar(aadhar),HttpStatus.OK);
     }
 

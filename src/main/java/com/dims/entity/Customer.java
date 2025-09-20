@@ -24,7 +24,7 @@ public class Customer {
    @Column(name = "customer_phone", unique = true)
     private String phoneNumer;
    @Column(name = "customer_aadhar", unique = true)
-    private String aadharNumber;
+    private String aadhar;
    @Column(name = "customer_pan", unique = true)
     private String panNumber;
    @Column(name = "customer_dob")
