@@ -32,10 +32,8 @@ public class CustomerServiceImpl implements CustomerServiceI{
             Customer cust = new Customer().builder()
                     .name(customerDto.getName())
                     .email(customerDto.getEmail())
-                    .aadhar(customerDto.getAadharNumber())
                     .dob(customerDto.getDob())
-                    .phoneNumer(customerDto.getPhoneNumer())
-                    .panNumber(customerDto.getPanNumber())
+                    .phoneNumber(customerDto.getPhoneNumber())
                     .address(customerDto.getAddress())
                     .build();
             return modelMapper.map(customerRepository.save(cust),CustomerDto.class);
@@ -53,10 +51,8 @@ public class CustomerServiceImpl implements CustomerServiceI{
             Customer cust = new Customer().builder()
                     .name(customerDto.getName())
                     .email(customerDto.getEmail())
-                    .aadhar(customerDto.getAadharNumber())
                     .dob(customerDto.getDob())
-                    .phoneNumer(customerDto.getPhoneNumer())
-                    .panNumber(customerDto.getPanNumber())
+                    .phoneNumber(customerDto.getPhoneNumber())
                     .address(customerDto.getAddress())
                     .build();
             return modelMapper.map(customerRepository.save(cust),CustomerDto.class);
