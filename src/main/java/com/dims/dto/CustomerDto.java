@@ -30,7 +30,7 @@ public class CustomerDto {
             regexp = "^[6-9]\\d{9}$",
             message = "Invalid phone number (must be 10 digits and start with 6–9)"
     )
-    private String phoneNumer;
+    private String phoneNumber;
 
     @NotNull
     @Size(min =12, max = 12, message = "aadhar should be 12 characters")

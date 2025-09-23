@@ -37,7 +37,7 @@ public class CustomerController {
         return new ResponseEntity<>(customerServiceI.getCustomerById(id), HttpStatus.OK);
     }
 
-    @GetMapping("/getCustomerByAadhar")
+    @GetMapping("/getCustomerByAadhar/{aadhar}")
     public ResponseEntity<CustomerDto> getCustomerByAadhar(@PathVariable String aadhar) {
         return new ResponseEntity<>(customerServiceI.getCustomerByAadhar(aadhar), HttpStatus.OK);
     }
@@ -59,7 +59,7 @@ public class CustomerController {
 
     @DeleteMapping("/deleteAllCustomer")
     public ResponseEntity<String> deleteAllCustomer(){
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(customerServiceI.deleteAll(),HttpStatus.OK);
     }
 
 

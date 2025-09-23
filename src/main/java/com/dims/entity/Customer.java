@@ -22,7 +22,7 @@ public class Customer {
    @Column(name = "customer_email", unique = true)
     private String email;
    @Column(name = "customer_phone", unique = true)
-    private String phoneNumer;
+    private String phoneNumber;
    @Column(name = "customer_aadhar", unique = true)
     private String aadhar;
    @Column(name = "customer_pan", unique = true)
