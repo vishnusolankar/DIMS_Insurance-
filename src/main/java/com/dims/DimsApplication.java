@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DimsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DimsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DimsApplication.class, args);
+    }
 
 }
