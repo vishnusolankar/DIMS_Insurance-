@@ -2,7 +2,6 @@ package com.dims.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.time.LocalDate;
 
