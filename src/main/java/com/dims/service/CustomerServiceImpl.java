@@ -34,7 +34,7 @@ public class CustomerServiceImpl implements CustomerServiceI{
                     .email(customerDto.getEmail())
                     .aadhar(customerDto.getAadharNumber())
                     .dob(customerDto.getDob())
-                    .phoneNumber(customerDto.getPhoneNumer())
+                    .phoneNumber(customerDto.getPhoneNumber())
                     .panNumber(customerDto.getPanNumber())
                     .address(customerDto.getAddress())
                     .build();
@@ -55,7 +55,7 @@ public class CustomerServiceImpl implements CustomerServiceI{
                     .email(customerDto.getEmail())
                     .aadhar(customerDto.getAadharNumber())
                     .dob(customerDto.getDob())
-                    .phoneNumber(customerDto.getPhoneNumer())
+                    .phoneNumber(customerDto.getPhoneNumber())
                     .panNumber(customerDto.getPanNumber())
                     .address(customerDto.getAddress())
                     .build();
